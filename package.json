@@ -1,0 +1,27 @@
+{
+  "name": "counterwatch",
+  "version": "1.0.0",
+  "description": "As an avid Overwatch player, my pet peeve is figuring out which character counters another character mid-game. As such, I have developed this tool to combat this very problem; a website that contains the counters to all overwatch characters.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Captain-Fahd/counterwatch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Captain-Fahd/counterwatch/issues"
+  },
+  "homepage": "https://github.com/Captain-Fahd/counterwatch#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "pg": "^8.16.0"
+  }
+}
