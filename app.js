@@ -1,12 +1,16 @@
+//importing dotenv
 import dotenv from 'dotenv';
 dotenv.config();
-const express = require('express');
+
+//Importing other vars`
+import express from 'express';
+import path from 'node:path';
+import indexRouter from './routes/indexRouter.js';
 const app = express();
-const path = require('node:path');
+
 //Middleware parser
 app.use(express.urlencoded({ extended: true }));
 //App routers
-const indexRouter = require('./routes/indexRouter');
 
 //App setup
 app.use(express.static(path.join(__dirname, 'public')));
