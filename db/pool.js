@@ -1,5 +1,9 @@
 import {Pool} from 'pg';
 
-module.exports = new Pool({
-    connectionString: process.env.DATABASE_URL,
+export default new Pool({
+  user: process.env.DBUSER,
+  host: process.env.DBHOST,
+  database: process.env.DBNAME,
+  password: process.env.DBPASSWORD,
+  port: process.env.DBPORT,
 });
