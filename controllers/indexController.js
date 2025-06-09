@@ -3,16 +3,9 @@ const title = 'Counterwatch';
 
 //CRUD function
 async function getCounters(req, res) {
-    try {
-        const counters = await db.getCounters(req.params.name);
-        console.log(counters);
-        counters.forEach(counter => {
-            console.log(counter.character);
-        });
-    } catch (error) {
-        console.error(error);
-    }
-    res.render('counters', {counters: counters})
+	const  counters  = await db.getCounters(req.params.name);
+    console.log('Counters from database:', counters);
+    res.render('counters', {counterList: counters});
 }
 
 async function getAllCharacters(req, res) {

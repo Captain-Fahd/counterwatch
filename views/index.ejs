@@ -9,7 +9,7 @@
 </head>
 <body>
 <% heroes.forEach(hero => { %>
-    <li><%= hero.name %></li>
+    <li><a href="/counters/<%= hero.name %>"><%= hero.name %></a></li>
 <% }) %>
 </body>
 </html>
